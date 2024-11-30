@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Fair 2024</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional external CSS for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2331cd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .event-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .event-list li {
+            margin: 10px 0;
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .event-list li:hover {
+            background-color: #b2ebf2;
+        }
+        .registration-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #3b8c6b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2e7050;
+        }
+    </style>
+    <header>
+        <img src="c:\Users\AYAN\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\427357DFBC5CC1967AFEEF00B8E6EC80\WhatsApp Image 2024-11-30 at 19.20.34_55aaf5b3.jpg" alt="My Company Logo" width="150">
+    </header>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Chowberia Dinabandhu mela 2024</h1>
+        <p>Join us for a fun-filled day with various events, food stalls, and more!</p>
+        <p>This website make by ayan sarkar @ph:7699578704</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Event Information -->
+        <section>
+            <h2>Events at the Dinabandhu mela 2024</h2>
+            <ul class="event-list">
+                <li>
+                    <h3>Traditional Dance Competition</h3>
+                    <p>Show off your dancing skills and celebrate our village culture!</p>
+                </li>
+                <li>
+                    <h3>vakti giti sing Competition</h3>
+                    <p>Show off your singing skills and celebrate !</p>
+                </li>
+                <li>
+                    <h3>sabji size Competition</h3>
+                    <p>show of your sabji size  and win exciting prizes!</p>
+                </li>
+                <li>
+                    <h3>Kids' Games</h3>
+                    <p>Bring your little ones for fun and interactive games!</p>
+                </li>
+                <li>
+                    <h3>Farmers Market</h3>
+                    <p>Explore fresh local produce and handmade goods from our village farmers.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>Register for Events</h2>
+            <p>Sign up for one or more events by filling out the form below:</p>
+            <form class="registration-form" action="submit_registration.php" method="POST">
+
+                <!-- Personal Details -->
+                <div class="form-group">
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+
+                <!-- Event Selection -->
+                <div class="form-group">
+                    <label for="events">Select Events to Participate In:</label>
+                    <select id="events" name="events[]" multiple required>
+                        <option value="dance_competition">Traditional Dance Competition</option>
+                        <option value="craft_contest">vakti giti sing Competition</option>
+                        <option value="cooking_contest">sabji size Competition</option>
+                        <option value="kids_games">Kids' Games</option>
+                        <option value="farmers_market">Farmers Market</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments (Optional):</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Register Now</button>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>
